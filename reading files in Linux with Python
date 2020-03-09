@@ -1,0 +1,28 @@
+file = open("spider.txt")
+print(file.readline())
+
+print(file.readline()))
+print(file.read())
+
+file.close()
+with open("spider.txt") as file:
+  print(file.readline())
+ 
+#this prints with white spaces in between lines 
+with open("spider.txt") as file:
+  for line in file:
+    print(lijne.upper())
+
+#this removes line spacing
+with open("spider.txt") as file:
+  for line in file:
+    print(line.strip().upper())
+    
+file = open("spider.txt.")
+lines = file.readlines()
+file.close()
+lines.sort()
+print(lines)
+
+#cheat sheet https://docs.python.org/3/library/functions.html#open
+  
