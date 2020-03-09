@@ -1,0 +1,43 @@
+import os
+os.remove("novel.txt")
+
+#rename a file
+os.rename("first_draft.txt", "finished_draft.txt")
+
+os.path.exists("finished_draft.txt")
+#checks if true or not
+
+#getsize
+os.path.getsize("spider.txt")
+
+#get last time modified
+os.path.getmtime("spider.txt)
+
+import datetime
+timestamp = os.path.gettime("spider.txt")
+datetime.datetime.fromtimestamp(timestamp)
+
+#creating an absolute path
+os.path.abspath("spider.txt")
+
+#print the pwd another way
+print(os.getcwd())
+
+os.mkdir("new_dir") #make directory
+os.chdir("new_dir")
+os.rmdir("new_dir") #remove directory only if empty
+
+import os
+os.listdir("website")
+ //this returns ['images', 'index.html', 'favicon.ico']
+ dir = "website"
+ for name in os.listdir.(dir):
+  fullname = os.path.join(dir,name)
+  if os.path.isdir(fullname):
+    print("{} is a directory".format(fullname))
+  else:
+    print("{} is a file".format(fullname)
+    
+#more links for reference
+https://docs.python.org/3/library/os.html
+https://docs.python.org/3/library/os.path.html
