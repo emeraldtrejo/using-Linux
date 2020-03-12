@@ -1,0 +1,38 @@
+cat csv_file.txt
+
+import csv
+f = open("csv_file.txt)
+#giving us an instance of the csv reader class
+csv_f = csv.reader(f)
+for row in csv_f:
+  #row variable will hold each  row in the csv 
+  name, phone, role = row
+  print("Name: {}, Phone:{}, Role: {}".format(name, phone, role))
+  f.close()
+
+  hosts = [["workstation.local", "192.168.25.46"], ["webserver.cloud," "10.2.5.6"]]
+  with open('hosts.csv', 'w') as hosts_csv:
+    #writer variable is now an instance of csv writer class
+    writer = csv.writer(hosts_csv)
+    #write them all together vs writerow
+    writer.writerows(hosts)
+
+ cat hosts.csv
+ #data is now published once this command is run
+
+ #reading and writing csv files with dictionaries
+ with open('software.csv) as software:
+  reader = csv.DictReader(software)
+  for row in reader:
+    print(("{} has {} users").format(row["name"], row["users"]))
+
+
+keys = ["name", "username", "department"]
+with open('by_department.csv', 'w') as by_department:
+  writer = csv.DictWriter(by_department, fieldnames=leys)
+  writer.writeheader()
+  #turn into lines from the file
+
+  https://docs.python.org/3/library/csv.html
+https://realpython.com/python-csv/
+  writer.writerows(users)
